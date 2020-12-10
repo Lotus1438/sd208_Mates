@@ -1,0 +1,17 @@
+//allows you to send HTTP request and view the response.
+
+POST http://localhost:3000/add
+Content-Type: application/json
+
+{
+    "firstName": "Jane",
+    "lastName": "Doe",
+    "address": "U.S",
+    "email": "janedoe@gmail.com",
+    "confirmEmail": "janedoe@gmail.com",
+    "password": "janeDoe",
+    "confirmPassword": "janeDoe",
+}
+
+###
+GET http://localhost:3000/get 

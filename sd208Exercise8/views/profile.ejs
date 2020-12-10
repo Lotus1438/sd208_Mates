@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+
+<style>
+    body {
+        margin: 0px;
+    }
+    
+    .bg {
+        background-image: linear-gradient(pink, purple);
+        height: 100vh;
+        overflow: auto;
+        background-size: auto;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding-top: 30px;
+    }
+    
+    .disInput {
+        border: none;
+        border-bottom: solid rgb(255, 1, 158) 1px;
+        border-radius: 0px;
+    }
+    
+    .btn {
+        padding: 10px;
+        font-size: 15px;
+        color: #fff;
+        background: pink;
+        border: none;
+        border-radius: 5px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+</style>
+
+<body>
+    <div class="bg container-fluid">
+
+
+        <div class="container">
+            <center>
+                <h3>WELCOME!</h3>
+            </center>
+            <div class="row">
+
+                <div class="col-sm">
+
+
+                    <h4>Name:
+                        <%= foundResults.firstname +" "+ foundResults.lastname%>
+                    </h4>
+                    <h4>Address:
+                        <%= foundResults.address %>
+                    </h4>
+                    <h4>Email:
+                        <%= foundResults.email%>
+                    </h4>
+                    <h4>Password:
+                        <%= foundResults.password%>
+                    </h4>
+
+
+                </div>
+                <div class="input-group">
+                    <br><br><br>
+                    <a href="/data" name="btn" class="btn">Back</a>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+
+
+</body>
+
+</html>
