@@ -1,0 +1,50 @@
+body {
+    background-image: linear-gradient(rgba(243, 227, 233, 0.5), rgba(243, 227, 233, 0.5)), url("gym.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    overflow: auto;
+    background-repeat: no-repeat;
+    padding-top: 30px;
+}
+
+.form {
+    border: 1px solid black;
+    width: 380px;
+    height: 350px;
+    padding-left: 130px;
+    padding-top: 100px;
+    margin-left: 300px;
+    margin-top: 125px;
+    box-shadow: 10px 10px 5px gray;
+    background: rgba(255, 255, 255, 0.5);
+    font-family: sans-serif;
+    border-radius: 10px 10px 10px 10px;
+}
+
+button {
+    scroll-padding-top: 25px;
+    background-color: lightskyblue;
+    font-size: 15px;
+    width: 150px;
+    height: 45px;
+    cursor: pointer;
+}
+
+.form-group {
+    margin: 10px 0px 10px 0px;
+}
+
+.form-group label {
+    display: block;
+    text-align: left;
+    margin: 3px;
+}
+
+.form-group input {
+    height: 130px;
+    width: 93%;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
